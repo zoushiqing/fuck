@@ -1,9 +1,10 @@
-package me.ivt.com.ui.performanceOptimization;
+package peropt.me.com.performaceoptimization.performanceOptimization;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import me.ivt.com.ui.R;
+import peropt.me.com.performaceoptimization.R;
+
 
 public class PerformanceMainActivity extends AppCompatActivity {
     

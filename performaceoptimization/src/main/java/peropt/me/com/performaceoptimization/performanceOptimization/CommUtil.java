@@ -1,4 +1,4 @@
-package me.ivt.com.ui.performanceOptimization;
+package peropt.me.com.performaceoptimization.performanceOptimization;
 
 import android.content.Context;
 
