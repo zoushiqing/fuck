@@ -66,8 +66,8 @@ public class MainActivity extends AppCompatActivity {
     }
     
     public void go3(View view) {
-        PopupMenu popupMenu=new PopupMenu(this,view);
-        popupMenu.getMenuInflater().inflate(R.menu.main,popupMenu.getMenu());
+        PopupMenu popupMenu = new PopupMenu(this, view);
+        popupMenu.getMenuInflater().inflate(R.menu.main, popupMenu.getMenu());
         popupMenu.show();
         
     }

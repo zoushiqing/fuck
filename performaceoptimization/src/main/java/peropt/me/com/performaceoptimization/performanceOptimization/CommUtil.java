@@ -1,26 +1,36 @@
 package peropt.me.com.performaceoptimization.performanceOptimization;
 
-import android.content.Context;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * desc:
  */
 public class CommUtil {
-    private static CommUtil instacnce;
-    private Context mContext;
+    private volatile static CommUtil instance;
     
-    private CommUtil(Context context) {
-        mContext = context;
+    private CommUtil() {
+        Lock lock = new ReentrantLock();
+        lock.lock();
     }
     
-    public static CommUtil getInstacnce(Context context) {
-        if (instacnce == null) {
+    public static CommUtil getInstance() {
+        if (instance == null) {
             synchronized (CommUtil.class) {
-                if (instacnce == null) {
-                    instacnce = new CommUtil(context);
+                if (instance == null) {
+                    instance = new CommUtil();
                 }
             }
         }
-        return instacnce;
+        return instance;
     }
+    
+    public static class intanceHandler {
+        public static final CommUtil COMM_UTIL = new CommUtil();
+    }
+    
+    public static CommUtil getInstance1() {
+        return intanceHandler.COMM_UTIL;
+    }
+    
 }
