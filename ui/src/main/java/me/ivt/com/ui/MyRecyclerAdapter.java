@@ -1,7 +1,6 @@
 package me.ivt.com.ui;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -54,8 +53,8 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.My
     public void onBindViewHolder(@NonNull MyHolder holder, int position) {
         RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) holder.mTextView.getLayoutParams();
         params.height = heights.get(position);
-        holder.mTextView.setBackgroundColor(Color.rgb(100, (int) (Math.random() * 255), (int) (Math.random() * 255)));
-        holder.mTextView.setLayoutParams(params);
+//        holder.mTextView.setBackgroundColor(Color.rgb(100, (int) (Math.random() * 255), (int) (Math.random() * 255)));
+//        holder.mTextView.setLayoutParams(params);
         holder.mTextView.setText(mStringArrayList.get(position));
         holder.mTextView.setOnLongClickListener(new MyOnLongClickLisener(position));
         holder.mTextView.setTag(position);

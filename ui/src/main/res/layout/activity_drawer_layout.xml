@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/too_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/too_bar"
+        tools:context=".slidingmenu_drawerlayout.DrawerLayoutActivity">
+        <!--内容部分-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ff0"
+                android:text="我是内容"/>
+        </LinearLayout>
+        <!--左侧滑菜单-->
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:orientation="vertical"
+            app:divider="@drawable/item_divider1"
+            app:showDividers="middle">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#f8c"
+                android:gravity="center_vertical"
+                android:text="item1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#f8c"
+                android:gravity="center_vertical"
+                android:text="item2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#f8c"
+                android:gravity="center_vertical"
+                android:text="item3"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+        <!--右滑菜单-->
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:orientation="vertical"
+            app:divider="@drawable/item_divider1"
+            app:showDividers="middle">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#f8c"
+                android:gravity="center_vertical"
+                android:text="item1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#f8c"
+                android:gravity="center_vertical"
+                android:text="item2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#f8c"
+                android:gravity="center_vertical"
+                android:text="item3"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

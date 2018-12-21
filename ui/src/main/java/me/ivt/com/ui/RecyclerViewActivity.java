@@ -42,7 +42,6 @@ public class RecyclerViewActivity extends AppCompatActivity {
         mMyRecyclerAdapter = new MyRecyclerAdapter(this, mMStrings);
         mMyRecyclerAdapter.setHasStableIds(true);
         mRecyclerView.setAdapter(mMyRecyclerAdapter);
-        
 //        mHandler.sendEmptyMessageDelayed(1,100);
     }
     private int i;

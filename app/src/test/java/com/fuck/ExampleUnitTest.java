@@ -1,5 +1,7 @@
 package com.fuck;
 
+import com.fuck.binarytree.BinaryTree;
+
 import org.junit.Test;
 
 import java.util.Stack;
@@ -103,4 +105,24 @@ public class ExampleUnitTest {
                 return 0;
         }
     }
+    
+    @Test
+    public void testMyHasMap() {
+        MyMap map = new MyHashMap();
+        for (int i = 0; i < 20; i++) {
+            map.put("a"+i, i);
+        }
+        System.out.println("size:" + map.size());
+        System.out.println("isEmpty:" + map.isEmpty());
+        System.out.println(map.get("a1"));
+    }
+    @Test
+    public void testTreeNode(){
+        BinaryTree binaryTree=new BinaryTree();
+        binaryTree.crateBinaryTree();
+//        int height = binaryTree.getHeight();
+//        System.out.println("height = " + height);
+        binaryTree.nonMidOrder(binaryTree.root);
+    }
+    
 }
