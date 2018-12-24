@@ -1,7 +1,13 @@
 package peropt.me.com.performaceoptimization;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.support.v7.app.AppCompatActivity;
+import android.view.ViewTreeObserver;
+import android.widget.TextView;
+
+import java.lang.ref.WeakReference;
 
 public class MainActivity extends AppCompatActivity {
     
@@ -9,6 +15,47 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //哈哈1111
+        TextView textView=null;
+        textView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+        
+            }
+        });
+        textView.getViewTreeObserver().removeOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+        
+            }
+        });
+        MyHandler myHandler = new MyHandler(this);
     }
+    
+    private static class MyHandler extends Handler {
+        WeakReference<MainActivity> mMainActivityWeakReference;
+        
+        private MyHandler(MainActivity mainActivity) {
+            mMainActivityWeakReference = new WeakReference<>(mainActivity);
+        }
+        
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            switch (msg.what) {
+                case 0:
+                    MainActivity mainActivity = mMainActivityWeakReference.get();
+                    if (mainActivity != null) {
+                        System.out.println("不错哟");
+                    }
+                    break;
+            }
+        }
+    }
+    
+    private static final Runnable RUNNABLE = new Runnable() {
+        @Override
+        public void run() {
+            
+        }
+    };
 }

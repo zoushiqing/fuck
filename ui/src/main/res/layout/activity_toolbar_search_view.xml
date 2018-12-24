@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".toolbar_search_view.ToolbarSearchViewActivity">
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:background="?attr/colorPrimary"
+    app:title="网易新闻"
+    app:titleTextColor="#ff0"
+    app:subtitle="旅游"
+    app:logo="@mipmap/ic_launcher"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+    android:layout_height="?android:actionBarSize">
+    
+</android.support.v7.widget.Toolbar>
+</android.support.constraint.ConstraintLayout>

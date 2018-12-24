@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_gallery"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:orderInCategory="100"
+        android:title="相册"/>
+    <item
+        android:id="@+id/action_detail"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:orderInCategory="100"
+        android:title="详情"/>
+    <item
+        android:id="@+id/action_about"
+        android:icon="@android:drawable/ic_menu_help"
+        android:orderInCategory="100"
+        android:title="相册"/>
+    <item
+        android:id="@+id/action_music"
+        android:icon="@android:drawable/ic_menu_help"
+        android:orderInCategory="100"
+        android:title="音乐">
+        <menu>
+            <item
+                android:id="@+id/action_play"
+                android:icon="@android:drawable/ic_media_play"
+                android:orderInCategory="100"
+                android:title="播放"/>
+            <item
+                android:id="@+id/action_pause"
+                android:icon="@android:drawable/ic_media_pause"
+                android:orderInCategory="100"
+                android:title="相册"/>
+        </menu>
+    </item>
+</menu>
