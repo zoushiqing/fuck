@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 
 import java.util.HashMap;
 
+import peropt.me.com.mylibrary.MyLibrary;
+
 public class MainActivity extends AppCompatActivity {
     /**
      * HashMap的底层主要是通过数组和链表来实现的，hashMap中通过Ke的hashCode来计算hash值的，由这个hash值计算在数组中的位置
@@ -16,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         HashMap hashMap=new HashMap();
-        
+        MyLibrary library=new MyLibrary();
+        library.go();
     }
 }

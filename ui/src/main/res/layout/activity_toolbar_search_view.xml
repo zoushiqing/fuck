@@ -6,16 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".toolbar_search_view.ToolbarSearchViewActivity">
-<android.support.v7.widget.Toolbar
-    android:id="@+id/toolbar"
-    android:layout_width="match_parent"
-    android:background="?attr/colorPrimary"
-    app:title="网易新闻"
-    app:titleTextColor="#ff0"
-    app:subtitle="旅游"
-    app:logo="@mipmap/ic_launcher"
-    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
-    android:layout_height="?android:actionBarSize">
-    
-</android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:logo="@mipmap/ic_launcher"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        app:subtitle="旅游"
+        app:title="网易新闻"
+        app:titleTextColor="#ff0">
+
+    </android.support.v7.widget.Toolbar>
 </android.support.constraint.ConstraintLayout>

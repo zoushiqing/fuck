@@ -1,1 +1,1 @@
-include ':app', ':ui', ':performaceoptimization'
+include ':app', ':ui', ':performaceoptimization', ':mylibrary'
