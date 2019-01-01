@@ -52,6 +52,7 @@ public class FabAnimalActivity extends AppCompatActivity implements HideScrollLi
     }
     
     @Override
+    
     public void onShow() {
         mToolbar.animate().translationY(0).setInterpolator(new DecelerateInterpolator(3));
         RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) mFab.getLayoutParams();

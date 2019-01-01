@@ -15,7 +15,11 @@
         </activity>
         <activity android:name=".parallelspacedemo.ParallelSpaceActivity">
         </activity>
-        <activity android:name=".coordinatorlayout.CoordinatorLayoutActivity">
+        <activity android:name=".floatingactionbutton.FabAnimalActivity">
+        </activity>
+        <activity android:name=".propertyanimation.PropertyAnimationActivity">
+        </activity>
+        <activity android:name=".animal.AnimalActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
