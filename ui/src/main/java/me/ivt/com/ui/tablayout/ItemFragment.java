@@ -1,27 +1,38 @@
 package me.ivt.com.ui.tablayout;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.LinearLayout;
 
+import java.util.ArrayList;
+
+import me.ivt.com.ui.DividerDecoration;
 import me.ivt.com.ui.R;
+import me.ivt.com.ui.coordinatorlayout.CoordninatorRecyAdapter;
 
 public class ItemFragment extends Fragment {
-    private TextView mTv;
     
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_item, container, false);
-        mTv = (TextView) view.findViewById(R.id.tv);
-        mTv.setBackgroundColor(Color.argb((int) (Math.random() * 255), (int) (Math.random() * 255), (int) (Math.random() * 255), (int) (Math.random() * 255)));
-        Bundle arguments = getArguments();
-        String key = arguments.getString("key");
-        mTv.setText(key);
+        RecyclerView mRv = (RecyclerView) view.findViewById(R.id.rv);
+        ArrayList<String> mStrings = new ArrayList<>();
+        for (int i = 'A'; i <= 'Z'; i++) {
+            mStrings.add("当前是数据--------------->" + (char) i);
+        }
+        for (int i = 'A'; i <= 'Z'; i++) {
+            mStrings.add("当前是数据--------------->" + (char) i);
+        }
+        mRv.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
+        mRv.addItemDecoration(new DividerDecoration(getActivity(),LinearLayout.VERTICAL));
+        mRv.setAdapter(new CoordninatorRecyAdapter(mStrings));
+        
         return view;
     }
 }
