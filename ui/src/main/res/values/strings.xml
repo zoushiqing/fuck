@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">fuck_shit_bitch</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -31,4 +31,6 @@
         ，景甜走访了泥河沟村的枣林和千年古枣园，对佳县当地的扶贫情况进行了重点了解和关注。地处陕西省东北部黄河中游西岸的佳县，
         自古称为葭州，现有贫困人口28060人，是国家扶贫开发重点县。淳朴的乡亲们特地以收获的红枣组成了“景美枣甜”四个大字，意在欢迎景甜的到来，景甜立即双手合十向乡亲们诚恳致谢。</string>
     <string name="fab_cus_behavior">me.ivt.com.ui.floatingactionbutton.fab_hide_behavior.FabBehavior</string>
+    <string name="phone_login">手机登录</string>
+    <string name="phone_reg">注册帐号</string>
 </resources>

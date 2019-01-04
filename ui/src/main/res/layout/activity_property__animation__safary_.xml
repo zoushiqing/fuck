@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".property_animation_safari.Property_Animation_Safary_Activity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/icon_2"
+        android:orientation="vertical"
+        android:id="@+id/first"
+        android:layout_height="match_parent">
+        
+        <Button
+            android:layout_width="match_parent"
+            android:background="#f00"
+            android:text="显示"
+            android:layout_gravity="center_horizontal"
+            android:onClick="startFirstAnimation"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/second"
+        android:onClick="startSecondAnimation"
+        android:src="@drawable/icon_1"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_height="400dp"/>
+</RelativeLayout>

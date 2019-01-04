@@ -58,4 +58,10 @@ public class MainActivity extends AppCompatActivity {
             
         }
     };
+    /**
+     * GPU刷新：GPU帮我们将UI等组件计算出成纹理Textrue和三维图形Polygons
+     * 同时会使用OpenGL------会将纹理和polygons缓存在GPU内存里面
+     * Refresh rate
+     * viewTree：
+     */
 }

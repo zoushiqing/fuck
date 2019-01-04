@@ -62,11 +62,20 @@ public class PaletteActivity extends AppCompatActivity {
                 
                 Palette.Swatch vibrantSwatch = palette.getVibrantSwatch();
                 int rgb = vibrantSwatch.getRgb();//主色调
+                int red = Color.red(rgb);
+                System.out.println("red = " + red);
+                int green = Color.green(rgb);
+                System.out.println("green = " + green);
+                int blue = Color.blue(rgb);
+                System.out.println("blue = " + blue);
     
                 int bodyTextColor = vibrantSwatch.getBodyTextColor();//图片中间文字的推荐颜色
                 vibrantSwatch.getTitleTextColor();//作为标题的推荐颜色
-                vibrantSwatch.getPopulation();//分析该颜色在图片中的像素值是多少
-                vibrantSwatch.getHsl();//颜色向量
+                
+                int population = vibrantSwatch.getPopulation();//分析该颜色在图片中的像素值是多少
+    
+                float[] hsl = vibrantSwatch.getHsl();//颜色向量
+                
                 mTitle.setTextColor(bodyTextColor);
                 mTitle.setBackgroundColor(getTranslationsColor(0.5f, rgb));
                 

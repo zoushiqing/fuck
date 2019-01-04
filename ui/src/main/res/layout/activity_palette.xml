@@ -12,15 +12,15 @@
     tools:context=".palette.PaletteActivity">
 
     <RelativeLayout
-        android:layout_width="200dp"
-        android:layout_height="200dp">
+        android:layout_width="400dp"
+        android:layout_height="400dp">
 
         <ImageView
             android:id="@+id/imgv"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:scaleType="fitXY"
-            android:src="@drawable/hehe"/>
+            android:src="@drawable/home_sel"/>
 
         <TextView
             android:id="@+id/title"
