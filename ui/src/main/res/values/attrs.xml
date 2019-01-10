@@ -6,4 +6,18 @@
     <attr name="x_out" format="float" />
     <attr name="y_in" format="float" />
     <attr name="y_out" format="float" />
+    <declare-styleable name="CustomProgressBar">
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundColor" format="color"/>
+        <attr name="roundWidth" format="dimension"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+        <attr name="max" format="integer"/>
+        <attr name="textShow" format="boolean"/>
+        <attr name="style">
+            <enum name="STROKE" value="0"/>
+            <enum name="FILL" value="1"/>
+        </attr>
+    </declare-styleable>
+    
 </resources>

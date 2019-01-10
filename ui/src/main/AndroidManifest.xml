@@ -26,9 +26,24 @@
         <activity android:name=".scene_translation_animation.SecondActivity">
         </activity>
         <activity android:name=".svg.SGVActivity">
-           
         </activity>
         <activity android:name=".parallax.ParallaxActivity">
+        </activity>
+        <activity android:name=".event.EventActivity">
+        </activity>
+        <activity android:name=".touchevent.TouchEventActivity">
+        </activity>
+        <activity android:name=".qq_sliding_menu.QQSlidingMenuActivity">
+        </activity>
+        <activity android:name=".qq_sliding_menu.SlidingItemMenuActivity">
+        </activity>
+        <activity android:name=".paint.PainActivity">
+        </activity>
+        <activity android:name=".high_cus_view.ZoomImageViewActivity">
+        </activity>
+        <activity android:name=".filter.FilterActivity">
+        </activity>
+        <activity android:name=".filter.MaskFilterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
