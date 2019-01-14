@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cus_view_group.CusViewGroupActivity">
+<me.ivt.com.ui.cus_view_group.TagLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="#f00"
+        android:layout_margin="10dp"
+        android:text="AAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="#000"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:text="BBBBBBBBBBBB"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#0f0"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:text="CCCCCC"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#f0f"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="DDDDDDDDDDDDDDDDDDDDDDD"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="#f00"
+        android:layout_margin="10dp"
+        android:text="EEEEEEEEEE"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="#000"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:text="FFFFFFFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#0f0"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:text="GGGGGGGGGGGGGGGGGGGGGGGGG"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#f0f"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="HHHHHHHHHHHHHHHHHHH"/>
+</me.ivt.com.ui.cus_view_group.TagLayout>
+
+</LinearLayout>
