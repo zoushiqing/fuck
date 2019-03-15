@@ -14,7 +14,5 @@ import org.junit.runner.RunWith;
 public class ExampleInstrumentedTest {
     @Test
     public void useAppContext() {
-        int i = 12;
-        System.out.println("i = " + (i >> 1));
     }
 }

@@ -26,10 +26,35 @@
         <activity android:name=".scene_translation_animation.SecondActivity">
         </activity>
         <activity android:name=".svg.SGVActivity">
-           
         </activity>
-        <activity 
+        <activity
             android:name=".parallax.ParallaxActivity">
+        </activity>
+        <activity android:name=".event.EventActivity">
+        </activity>
+        <activity android:name=".touchevent.TouchEventActivity">
+        </activity>
+        <activity android:name=".qq_sliding_menu.QQSlidingMenuActivity">
+        </activity>
+        <activity android:name=".qq_sliding_menu.SlidingItemMenuActivity">
+        </activity>
+        <activity android:name=".paint.PainActivity">
+        </activity>
+        <activity android:name=".high_cus_view.ZoomImageViewActivity">
+        </activity>
+        <activity android:name=".filter.FilterActivity">
+        </activity>
+        <activity android:name=".filter.MaskFilterActivity">
+        </activity>
+        <activity android:name=".canvas.CanvasActivity">
+        </activity>
+        <activity android:name=".RevealDrawble.RevealDrawbleActivity">
+
+        </activity>
+        <activity android:name=".search_view.SearchViewActivity">
+        </activity>
+        <activity android:name=".cus_view_group.CusViewGroupActivity">
+            >>>>>>> 533abd95ea1b414e4721b1456e3b0487c919c7a0
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

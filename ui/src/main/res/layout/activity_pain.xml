@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".paint.PainActivity">
+
+    <me.ivt.com.ui.paint.CustomProgressBar
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:roundProgressColor="#ff0000"
+        app:roundWidth="10dp"
+        app:textColor="#0f0"
+        app:textSize="16sp"/>
+</RelativeLayout>
