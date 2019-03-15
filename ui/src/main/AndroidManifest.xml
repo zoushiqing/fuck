@@ -54,7 +54,6 @@
         <activity android:name=".search_view.SearchViewActivity">
         </activity>
         <activity android:name=".cus_view_group.CusViewGroupActivity">
-            >>>>>>> 533abd95ea1b414e4721b1456e3b0487c919c7a0
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
