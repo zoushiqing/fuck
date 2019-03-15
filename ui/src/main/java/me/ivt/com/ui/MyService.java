@@ -16,6 +16,7 @@ public class MyService extends Service {
     }
     
     public interface OnProgessUpdateListener {
+        //我来答应无算
         void onProgressUpdate(int progress);
     }
     
