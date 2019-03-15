@@ -1,6 +1,7 @@
 package me.ivt.com.ui;
 
 import android.annotation.SuppressLint;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -73,17 +74,15 @@ public class RecyclerViewActivity extends AppCompatActivity {
     }
     
     public void go2(View view) {
-        
-        
+        Bitmap bitmap = null;
+        bitmap.recycle();
     }
     
     public void go3(View view) {
         
-        
     }
     
     public void go4(View view) {
-        
         
     }
 }

@@ -2,8 +2,7 @@ package me.ivt.com.ui;
 
 import org.junit.Test;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.io.IOException;
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -13,19 +12,56 @@ import java.util.Map;
 public class ExampleUnitTest {
     
     @Test
-    public void addition_isCorrect() {
-        LinkedHashMap<Integer, Integer> map = new LinkedHashMap<>(0, 0.7f, true);
-        map.put(0, 1);
-        map.put(2, 2);
-        map.put(3, 3);
-        map.put(4, 4);
-        map.put(5, 5);
-        map.put(6, 6);
-        map.put(7, 7);
-        map.get(3);
-        map.get(5);
-        for (Map.Entry<Integer, Integer> integerIntegerEntry : map.entrySet()) {
-            System.out.println(integerIntegerEntry.getKey() + "  :   " + integerIntegerEntry.getValue());
+    public void addition_isCorrect() throws IOException {
+        MyObject myObject=new MyObject();
+        new ThreadB(myObject).start();
+        new ThreadA(myObject).start();
+    }
+    
+    public class MyObject{
+           public void methodA(){
+            System.out.println("执行了AAAAAAAAAAAAAA");
+        }
+         public void methodB(){
+            System.out.println("执行了BBBBBBBBBBBBBB");
+        }
+    }
+    public class ThreadA extends Thread{
+        private MyObject mMyObject;
+        public ThreadA(MyObject myObject){
+            mMyObject=myObject;
+        }
+    
+        @Override
+        public void run() {
+            super.run();
+            while (true){
+                mMyObject.methodA();
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+    public class ThreadB extends Thread{
+        private MyObject mMyObject;
+        public ThreadB(MyObject myObject){
+            mMyObject=myObject;
+        }
+        
+        @Override
+        public void run() {
+            super.run();
+            while (true){
+                mMyObject.methodB();
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
 }

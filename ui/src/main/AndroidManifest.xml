@@ -28,7 +28,8 @@
         <activity android:name=".svg.SGVActivity">
            
         </activity>
-        <activity android:name=".parallax.ParallaxActivity">
+        <activity 
+            android:name=".parallax.ParallaxActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

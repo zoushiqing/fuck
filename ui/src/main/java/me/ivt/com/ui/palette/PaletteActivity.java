@@ -1,5 +1,6 @@
 package me.ivt.com.ui.palette;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
@@ -110,5 +111,10 @@ public class PaletteActivity extends AppCompatActivity {
         int a = rgb >>> 24;
         a = Math.round(percent * a);
         return Color.argb(a, r, g, b);
+    }
+    
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
     }
 }
